@@ -12,10 +12,19 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "deepseek_assistant.customView",
+          "name": "My Extension",
+          "icon": "$(extensions-star-full)"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "deepseek-assistant.helloWorld",
-        "title": "Hello World"
+        "command": "deepseek_assistant.refreshView",
+        "title": "Refresh My Extension View"
       }
     ]
   },
